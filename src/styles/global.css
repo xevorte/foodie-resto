@@ -2,50 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Poppins';
-  src: url('../assets/fonts/Poppins-Light.ttf') format('truetype');
-  font-weight: light;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../assets/fonts/Poppins-Medium.ttf') format('truetype');
-  font-weight: medium;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../assets/fonts/Poppins-SemiBold.ttf') format('truetype');
-  font-weight: semibold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../assets/fonts/Poppins-Black.ttf') format('truetype');
-  font-weight: extrabold;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
   html {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
   }
 }
