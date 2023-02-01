@@ -1,0 +1,13 @@
+export { ReactComponent as LOGO } from '../assets/svgs/logo.svg';
+export { ReactComponent as IC_TOGGLE } from '../assets/svgs/ic_toggle.svg';
+export { ReactComponent as IC_HOME } from '../assets/svgs/ic_home.svg';
+export { ReactComponent as IC_MENU } from '../assets/svgs/ic_menu.svg';
+export { ReactComponent as IC_FILTER } from '../assets/svgs/ic_filter.svg';
+export { ReactComponent as IC_HISTORY } from '../assets/svgs/ic_history.svg';
+export { ReactComponent as IC_PARTNERS } from '../assets/svgs/ic_partners.svg';
+export { ReactComponent as IC_PROMO } from '../assets/svgs/ic_promo.svg';
+export { ReactComponent as IC_SEARCH } from '../assets/svgs/ic_search.svg';
+export { ReactComponent as IC_SETTINGS } from '../assets/svgs/ic_settings.svg';
+export { ReactComponent as IC_NOTIFICATION } from '../assets/svgs/ic_notification.svg';
+export { ReactComponent as IC_DOTS } from '../assets/svgs/ic_dots.svg';
+export { ReactComponent as IC_LOGOUT } from '../assets/svgs/ic_logout.svg';

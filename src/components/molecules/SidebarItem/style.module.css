@@ -1,0 +1,15 @@
+.sidebaritem {
+  @apply block text-center py-2 px-2.5 rounded-xl transition-all;
+}
+
+.sidebaritem.active, .sidebaritem:hover {
+  @apply bg-primary;
+}
+
+.sidebaritem .icon {
+  @apply flex justify-center mb-2;
+};
+
+.sidebaritem.active .icon path, .sidebaritem:hover .icon path {
+  stroke: white
+}

@@ -1,0 +1,11 @@
+export { default as Text } from './Text';
+export { default as TextXS } from './Text/XS';
+export { default as TextSM } from './Text/SM';
+export { default as TextM } from './Text/M';
+export { default as TextLG } from './Text/LG';
+export { default as TextXL } from './Text/XL';
+export { default as TextXXL } from './Text/XXL';
+export { default as TextXXXL } from './Text/XXXL';
+export { default as Button } from './Button';
+export { default as ButtonFilled } from './Button/Filled';
+export { default as ButtonOutlined } from './Button/Outlined';
