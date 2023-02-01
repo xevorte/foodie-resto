@@ -18,6 +18,10 @@ export default function App() {
 
   const protectedRoutes = [
     {
+      pathname: '/',
+      element: PAGE.Menu
+    },
+    {
       pathname: '/menu',
       element: PAGE.Menu
     }
