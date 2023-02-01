@@ -23,5 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-.vercel
-/vercel.json
+# Local Netlify folder
+.netlify
+/_redirects
