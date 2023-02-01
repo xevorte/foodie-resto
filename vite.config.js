@@ -11,18 +11,4 @@ export default defineConfig({
     react(),
     svgr(),
   ],
-  serve: {
-    middleware: (app) => {
-      app.use(
-        '/poppins',
-        createProxyMiddleware({
-          target: 'https://fonts.cdnfonts.com/css/poppins',
-          changeOrigin: true,
-          headers: {
-            'Access-Control-Allow-Origin': '*',
-          },
-        })
-      );
-    },
-  },
 });
