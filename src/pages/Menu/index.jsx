@@ -73,11 +73,11 @@ export default function Page() {
 
   return (
     <>
-      <div className="w-full lg:w-3/5 xlg:w-full">
+      <div className="relative flex flex-col w-full lg:w-3/5 xlg:w-full">
         <COMPONENT.MenuHeader />
-        <div className="min-h-[800px] bg-light p-10">
-          <div className="grid sm:grid-cols-2 xlg:grid-cols-3 grid-flow-row-dense gap-8">
-            {menus.map(menu => (
+        <div className="min-h-[800px] h-full bg-light p-10">
+          <div className="grid sm:grid-cols-2 xlg:grid-cols-3 3xl:grid-cols-4 grid-flow-row-dense gap-8">
+            {menus.map((menu) => (
               <COMPONENT.MenuItem
                 key={menu.id}
                 id={menu.id}
@@ -85,7 +85,7 @@ export default function Page() {
                 title={menu.title}
                 price={menu.price}
                 desc={menu.desc}
-                isAdded={orders.some(order => order.id === menu.id)}
+                isAdded={orders.some((order) => order.id === menu.id)}
               />
             ))}
           </div>
