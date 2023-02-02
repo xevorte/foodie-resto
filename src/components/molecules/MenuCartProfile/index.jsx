@@ -12,8 +12,8 @@ export default function Component(props) {
           <p className="text-secondary text-base ">Cashier</p>
         </div>
       </div>
-      <a href="#" className="relative">
-        <div className="block w-[8px] h-[8px] absolute left-4 top-1 bg-primary rounded-full border border-white"></div>
+      <a href="#" className="group relative p-1.5 rounded-full transition-all hover:bg-light">
+        <div className="block w-[10px] h-[10px] absolute left-5 top-2 bg-primary rounded-full border-2 border-white group-hover:border-light"></div>
         <SVG.IC_NOTIFICATION />
       </a>
     </div>

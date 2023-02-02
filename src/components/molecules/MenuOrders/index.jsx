@@ -5,8 +5,15 @@ import { setOrders } from '../../../bootstraps/bootstrapActions';
 
 export default function Component() {
   const [ menuOrders, setMenuOrders ] = useState([]);
+  const [ orderNumber, setOrderNumber ] = useState(0);
   const { menus, orders } = useSelector(state => state);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (orders.length > 0) {
+      setOrderNumber(Math.floor(Math.random() * (99999 - 10000 + 1)));
+    }
+  }, []);
 
   useEffect(() => {
     setMenuOrders(menus.filter(menu => orders.some(order => order.id === menu.id)));
@@ -15,7 +22,7 @@ export default function Component() {
   return (
     <div className="orders">
       <COMPONENT.TextXXL variant="dark" type="semibold">
-        Orders #72401
+        Orders #{orderNumber}
       </COMPONENT.TextXXL>
       <div className="flex items-center xlg:justify-between mt-6 mb-8 overflow-x-auto">
         <COMPONENT.ButtonFilled
